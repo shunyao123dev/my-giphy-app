@@ -1,0 +1,28 @@
+.pagination {
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  gap: 5px; /* Space between items */
+}
+
+.pagination button {
+  padding: 5px 10px; /* Space inside the button */
+  border: 1px solid #ccc; /* Light grey border */
+  background-color: white; /* White background */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.pagination button.disabled,
+.pagination button:disabled {
+  cursor: not-allowed; /* Not-allowed cursor */
+  opacity: 0.5; /* Semi-transparent */
+}
+
+.pagination button.active {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border-color: #007bff; /* Blue border */
+}
+
+.pagination span {
+  padding: 5px 10px; /* Space inside the span */
+}

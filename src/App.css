@@ -1,4 +1,32 @@
-.App {
+nav {
+  background-color: #f8f9fa;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+nav a.active {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center; /* Center the search bar horizontally */
+  margin-bottom: 20px;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +63,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
