@@ -42,7 +42,7 @@ const TrendingGifs = () => {
 
   useEffect(() => {
     fetchGifs("https://api.giphy.com/v1/gifs/trending", {
-      api_key: "Qcotf8UElFuKMJT1qSgdUZx0A4xADMMI",
+      api_key: process.env.REACT_APP_GIPHY_API_KEY,
       limit: gifsPerPage,
       offset: (currentPage - 1) * gifsPerPage,
       rating: "g",
@@ -53,7 +53,7 @@ const TrendingGifs = () => {
     event.preventDefault();
     dispatch({ type: "RESET_GIFS" });
     fetchGifs("https://api.giphy.com/v1/gifs/search", {
-      api_key: "Qcotf8UElFuKMJT1qSgdUZx0A4xADMMI",
+      api_key: process.env.REACT_APP_GIPHY_API_KEY,
       q: state.searchTerm,
       limit: gifsPerPage,
       offset: 0,
